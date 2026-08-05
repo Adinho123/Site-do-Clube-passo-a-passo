@@ -1,1 +1,57 @@
-/* Arquivo principal do site */
+/* =========================================
+   VARIÁVEIS E CONFIGURAÇÕES GERAIS
+========================================= */
+
+:root {
+    --verde-escuro: #0f351f;
+    --verde-principal: #164d2c;
+    --verde-medio: #3b7a4d;
+    --verde-claro: #a9cf73;
+    --dourado: #d8c36a;
+    --branco: #ffffff;
+    --creme: #f5f2e8;
+    --texto-escuro: #27332b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: "Montserrat", sans-serif;
+
+    background-color: var(--creme);
+    color: var(--texto-escuro);
+
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+main section {
+    padding: 40px;
+    background-color: var(--branco);
+    border-radius: 16px;
+}
+
+main h2 {
+    margin-bottom: 15px;
+    color: var(--verde-principal);
+}
