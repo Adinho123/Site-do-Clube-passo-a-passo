@@ -1,1 +1,210 @@
-responsivo
+/* =========================================
+   NOTEBOOKS E TELAS MÉDIAS
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .cabecalho-principal,
+    .cabecalho-sobreposicao {
+        min-height: 500px;
+    }
+
+    .cabecalho-sobreposicao {
+        padding: 45px 28px;
+    }
+
+    .cabecalho-conteudo {
+        grid-template-columns:
+            175px 1fr 175px;
+
+        gap: 25px;
+    }
+
+    .cabecalho-logo img {
+        width: 165px;
+        height: 165px;
+    }
+
+    .cabecalho-texto h1 {
+        font-size:
+            clamp(3rem, 5vw, 4.6rem);
+    }
+
+}
+
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 850px) {
+
+    .cabecalho-principal {
+        background-position:
+            center center;
+    }
+
+    .cabecalho-principal,
+    .cabecalho-sobreposicao {
+        min-height: 470px;
+    }
+
+    .cabecalho-sobreposicao {
+        padding: 38px 22px;
+
+        background:
+            rgba(7, 42, 23, 0.78);
+    }
+
+    .cabecalho-conteudo {
+        grid-template-columns:
+            130px 1fr 130px;
+
+        gap: 18px;
+    }
+
+    .cabecalho-logo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .cabecalho-subtitulo {
+        font-size: 0.9rem;
+        letter-spacing: 4px;
+    }
+
+    .cabecalho-texto h1 {
+        font-size:
+            clamp(2.4rem, 6vw, 3.4rem);
+
+        letter-spacing: 2px;
+    }
+
+    .cabecalho-escola {
+        margin-top: 18px;
+        font-size: 0.9rem;
+    }
+
+    .cabecalho-local {
+        font-size: 0.78rem;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 600px) {
+
+    .cabecalho-principal {
+        min-height: auto;
+
+        background-position:
+            center center;
+    }
+
+    .cabecalho-sobreposicao {
+        min-height: auto;
+
+        padding:
+            32px 18px 36px;
+
+        background:
+            linear-gradient(
+                rgba(5, 35, 19, 0.8),
+                rgba(5, 35, 19, 0.88)
+            );
+    }
+
+    .cabecalho-conteudo {
+        display: grid;
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap:
+            24px 16px;
+    }
+
+    .cabecalho-texto {
+        grid-column:
+            1 / -1;
+
+        grid-row: 1;
+
+        order: -1;
+    }
+
+    .cabecalho-logo {
+        grid-row: 2;
+    }
+
+    .cabecalho-logo img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .cabecalho-subtitulo {
+        margin-bottom: 6px;
+
+        font-size: 0.78rem;
+
+        letter-spacing: 3px;
+    }
+
+    .cabecalho-texto h1 {
+        font-size:
+            clamp(2.1rem, 10vw, 3rem);
+
+        line-height: 1.1;
+
+        letter-spacing: 1px;
+    }
+
+    .cabecalho-escola {
+        max-width: 390px;
+
+        margin-top: 16px;
+
+        font-size: 0.82rem;
+        line-height: 1.45;
+    }
+
+    .cabecalho-local {
+        margin-top: 6px;
+
+        font-size: 0.72rem;
+
+        letter-spacing: 1px;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 380px) {
+
+    .cabecalho-sobreposicao {
+        padding:
+            28px 12px 32px;
+    }
+
+    .cabecalho-conteudo {
+        gap: 20px 10px;
+    }
+
+    .cabecalho-logo img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .cabecalho-texto h1 {
+        font-size: 2rem;
+    }
+
+}
