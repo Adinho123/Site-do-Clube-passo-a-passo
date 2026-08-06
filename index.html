@@ -4,7 +4,7 @@
 <head>
 
     <!-- =========================================
-         CONFIGURAÇÕES DA PÁGINA
+         CONFIGURAÇÕES BÁSICAS
     ========================================== -->
 
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
 
     <meta
         name="description"
-        content="Portal do Clube de Ciências Ouro Verde, do Colégio Estadual do Campo Professor Eugênio de Almeida, localizado no Distrito de Fluviópolis, em São Mateus do Sul, Paraná."
+        content="Site do Clube de Ciências Ouro Verde, do Colégio Estadual do Campo Professor Eugênio de Almeida, localizado no Distrito de Fluviópolis, em São Mateus do Sul, Paraná."
     >
 
     <meta
@@ -24,10 +24,24 @@
         content="Clube de Ciências Ouro Verde"
     >
 
-    <title>Clube de Ciências Ouro Verde</title>
+    <meta
+        name="theme-color"
+        content="#103e24"
+    >
 
-    <!-- Fontes oficiais -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>
+        Clube de Ciências Ouro Verde
+    </title>
+
+
+    <!-- =========================================
+         FONTES
+    ========================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
 
     <link
         rel="preconnect"
@@ -40,36 +54,80 @@
         rel="stylesheet"
     >
 
-    <!-- CSS principal -->
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- =========================================
+         ARQUIVOS CSS
+    ========================================== -->
+
+    <!-- Configurações gerais, menu, cards e rodapé -->
+    <link
+        rel="stylesheet"
+        href="css/style.css?v=2"
+    >
+
+    <!-- Cabeçalho e banner principal -->
+    <link
+        rel="stylesheet"
+        href="css/hero.css?v=2"
+    >
+
+    <!-- Adaptação para celular e tablet -->
+    <link
+        rel="stylesheet"
+        href="css/responsivo.css?v=2"
+    >
 
 </head>
 
+
 <body>
 
+    <!-- Link de acessibilidade -->
+    <a
+        class="link-pular"
+        href="#conteudo-principal"
+    >
+        Pular para o conteúdo principal
+    </a>
+
+
     <!-- =========================================
-         CABEÇALHO E BANNER PRINCIPAL
+         CABEÇALHO COM BANNER
     ========================================== -->
 
-    <header class="cabecalho-principal" id="inicio">
+    <header
+        class="cabecalho-principal"
+        id="inicio"
+    >
+
+        <!--
+            A imagem fachada-do-colegio.png
+            será colocada como fundo pelo hero.css.
+        -->
 
         <div class="cabecalho-sobreposicao">
 
             <div class="cabecalho-conteudo">
 
-                <!-- Logo do Colégio: lado esquerdo -->
+
+                <!-- Logo do colégio: lado esquerdo -->
+
                 <a
                     class="cabecalho-logo"
                     href="index.html"
-                    aria-label="Voltar para o início"
+                    aria-label="Voltar para a página inicial"
                 >
+
                     <img
                         src="imagens/logos/logo-eugenio.png"
                         alt="Logotipo do Colégio Estadual do Campo Professor Eugênio de Almeida"
                     >
+
                 </a>
 
-                <!-- Identificação do site: centro -->
+
+                <!-- Nome do site: centro -->
+
                 <div class="cabecalho-texto">
 
                     <p class="cabecalho-linha-menor">
@@ -94,16 +152,20 @@
 
                 </div>
 
-                <!-- Logo do Clube: lado direito -->
+
+                <!-- Logo do clube: lado direito -->
+
                 <a
                     class="cabecalho-logo"
                     href="index.html"
-                    aria-label="Voltar para o início"
+                    aria-label="Voltar para a página inicial"
                 >
+
                     <img
                         src="imagens/logos/logo-clube.png"
                         alt="Logo do Clube de Ciências Ouro Verde"
                     >
+
                 </a>
 
             </div>
@@ -112,13 +174,14 @@
 
     </header>
 
+
     <!-- =========================================
          MENU PRINCIPAL
     ========================================== -->
 
     <nav
         class="menu-principal"
-        aria-label="Menu principal"
+        aria-label="Menu principal do site"
     >
 
         <div class="menu-container">
@@ -130,12 +193,13 @@
                 Ouro Verde
             </a>
 
+
             <ul class="menu-lista">
 
                 <li>
                     <a
                         class="menu-ativo"
-                        href="#inicio"
+                        href="index.html"
                     >
                         Início
                     </a>
@@ -155,7 +219,7 @@
 
                 <li>
                     <a href="paginas/plantio-cuidados.html">
-                        Plantio
+                        Plantio e Cuidados
                     </a>
                 </li>
 
@@ -195,19 +259,24 @@
 
     </nav>
 
+
     <!-- =========================================
          CONTEÚDO PRINCIPAL
     ========================================== -->
 
-    <main>
+    <main id="conteudo-principal">
 
-        <!-- Apresentação -->
+
+        <!-- =====================================
+             APRESENTAÇÃO
+        ====================================== -->
+
         <section class="secao-apresentacao">
 
             <div class="container">
 
                 <p class="rotulo-secao">
-                    Pesquisa, educação e protagonismo estudantil
+                    Ciência, educação e protagonismo estudantil
                 </p>
 
                 <h2 class="titulo-secao">
@@ -215,8 +284,8 @@
                 </h2>
 
                 <p class="texto-destaque">
-                    Um espaço de investigação científica, inovação,
-                    valorização da erva-mate, sustentabilidade e
+                    Um espaço dedicado à investigação científica, à inovação,
+                    à sustentabilidade, à valorização da erva-mate e ao
                     desenvolvimento de projetos realizados pelos estudantes.
                 </p>
 
@@ -224,19 +293,28 @@
                     O Clube de Ciências Ouro Verde pertence ao Colégio Estadual
                     do Campo Professor Eugênio de Almeida, localizado no
                     Distrito de Fluviópolis, em São Mateus do Sul, Paraná.
-                    Nossas atividades aproximam a ciência da realidade da
-                    comunidade escolar por meio de pesquisas, experimentos,
-                    tecnologia e ações de educação ambiental.
+                </p>
+
+                <p>
+                    Por meio de pesquisas, experiências, atividades práticas,
+                    tecnologia, robótica e educação ambiental, os estudantes
+                    investigam problemas reais e desenvolvem soluções
+                    relacionadas à comunidade e ao território onde vivem.
                 </p>
 
             </div>
 
         </section>
 
-        <!-- Acessos principais -->
+
+        <!-- =====================================
+             ACESSOS ÀS SUBPÁGINAS
+        ====================================== -->
+
         <section class="secao-acessos">
 
             <div class="container">
+
 
                 <div class="cabecalho-secao">
 
@@ -253,18 +331,25 @@
                     </div>
 
                     <p class="descricao-secao">
-                        Acesse conteúdos produzidos pelos estudantes e conheça
-                        a história, os projetos e os estudos desenvolvidos pelo
-                        clube.
+                        Acesse os conteúdos produzidos pelos estudantes e
+                        conheça a história, as pesquisas e as atividades
+                        desenvolvidas pelo Clube Ouro Verde.
                     </p>
 
                 </div>
 
+
                 <div class="grade-cards">
+
+
+                    <!-- História -->
 
                     <article class="card-acesso">
 
-                        <div class="card-icone" aria-hidden="true">
+                        <div
+                            class="card-icone"
+                            aria-hidden="true"
+                        >
                             📖
                         </div>
 
@@ -273,8 +358,8 @@
                         </h3>
 
                         <p>
-                            Conheça a trajetória da erva-mate, sua importância
-                            regional e a história do Clube Ouro Verde.
+                            Conheça a história do clube, da escola e da
+                            erva-mate em nossa região.
                         </p>
 
                         <a
@@ -286,9 +371,15 @@
 
                     </article>
 
+
+                    <!-- Lendas e Folclore -->
+
                     <article class="card-acesso">
 
-                        <div class="card-icone" aria-hidden="true">
+                        <div
+                            class="card-icone"
+                            aria-hidden="true"
+                        >
                             🌳
                         </div>
 
@@ -297,8 +388,8 @@
                         </h3>
 
                         <p>
-                            Descubra narrativas, tradições e elementos culturais
-                            relacionados à erva-mate e à região.
+                            Descubra lendas, histórias e manifestações
+                            culturais relacionadas à erva-mate.
                         </p>
 
                         <a
@@ -310,9 +401,15 @@
 
                     </article>
 
+
+                    <!-- Plantio -->
+
                     <article class="card-acesso">
 
-                        <div class="card-icone" aria-hidden="true">
+                        <div
+                            class="card-icone"
+                            aria-hidden="true"
+                        >
                             🌱
                         </div>
 
@@ -334,9 +431,15 @@
 
                     </article>
 
+
+                    <!-- Produção de mudas -->
+
                     <article class="card-acesso">
 
-                        <div class="card-icone" aria-hidden="true">
+                        <div
+                            class="card-icone"
+                            aria-hidden="true"
+                        >
                             🍃
                         </div>
 
@@ -345,8 +448,8 @@
                         </h3>
 
                         <p>
-                            Conheça as etapas de coleta de sementes, germinação,
-                            desenvolvimento e produção de mudas.
+                            Conheça as etapas de coleta de sementes,
+                            germinação, desenvolvimento e produção de mudas.
                         </p>
 
                         <a
@@ -358,9 +461,15 @@
 
                     </article>
 
+
+                    <!-- Receitas -->
+
                     <article class="card-acesso">
 
-                        <div class="card-icone" aria-hidden="true">
+                        <div
+                            class="card-icone"
+                            aria-hidden="true"
+                        >
                             🧁
                         </div>
 
@@ -369,8 +478,8 @@
                         </h3>
 
                         <p>
-                            Encontre receitas desenvolvidas com erva-mate e
-                            conheça novas formas de aproveitar a planta.
+                            Encontre receitas e novas formas de aproveitar a
+                            erva-mate na alimentação.
                         </p>
 
                         <a
@@ -382,9 +491,15 @@
 
                     </article>
 
+
+                    <!-- Projetos -->
+
                     <article class="card-acesso">
 
-                        <div class="card-icone" aria-hidden="true">
+                        <div
+                            class="card-icone"
+                            aria-hidden="true"
+                        >
                             🔬
                         </div>
 
@@ -394,7 +509,7 @@
 
                         <p>
                             Acompanhe pesquisas, experiências e soluções
-                            científicas desenvolvidas pelos estudantes.
+                            desenvolvidas pelos estudantes.
                         </p>
 
                         <a
@@ -406,9 +521,15 @@
 
                     </article>
 
+
+                    <!-- Galeria -->
+
                     <article class="card-acesso">
 
-                        <div class="card-icone" aria-hidden="true">
+                        <div
+                            class="card-icone"
+                            aria-hidden="true"
+                        >
                             📷
                         </div>
 
@@ -417,8 +538,8 @@
                         </h3>
 
                         <p>
-                            Veja registros das atividades, encontros,
-                            experimentos, visitas e eventos do clube.
+                            Veja fotografias de atividades, experiências,
+                            visitas, eventos e apresentações.
                         </p>
 
                         <a
@@ -430,9 +551,15 @@
 
                     </article>
 
+
+                    <!-- Notícias -->
+
                     <article class="card-acesso">
 
-                        <div class="card-icone" aria-hidden="true">
+                        <div
+                            class="card-icone"
+                            aria-hidden="true"
+                        >
                             📰
                         </div>
 
@@ -442,7 +569,7 @@
 
                         <p>
                             Confira novidades, eventos, resultados,
-                            participações e conquistas do Clube Ouro Verde.
+                            participações e conquistas do clube.
                         </p>
 
                         <a
@@ -460,12 +587,17 @@
 
         </section>
 
-        <!-- Informações institucionais -->
+
+        <!-- =====================================
+             INFORMAÇÕES INSTITUCIONAIS
+        ====================================== -->
+
         <section class="secao-institucional">
 
             <div class="container">
 
                 <div class="painel-institucional">
+
 
                     <div class="painel-texto">
 
@@ -480,18 +612,27 @@
                         <p>
                             O Colégio Estadual do Campo Professor Eugênio de
                             Almeida atende estudantes do Ensino Fundamental,
-                            Médio e Técnico e valoriza uma educação conectada à
-                            realidade local, à cultura regional e ao
-                            desenvolvimento sustentável.
+                            Médio e Técnico.
+                        </p>
+
+                        <p>
+                            A escola valoriza uma educação conectada à
+                            realidade local, à cultura regional, à ciência,
+                            à tecnologia e ao desenvolvimento sustentável.
                         </p>
 
                     </div>
 
+
                     <div class="dados-institucionais">
+
 
                         <div class="dado">
 
-                            <span class="dado-icone" aria-hidden="true">
+                            <span
+                                class="dado-icone"
+                                aria-hidden="true"
+                            >
                                 📍
                             </span>
 
@@ -502,23 +643,31 @@
                                 </strong>
 
                                 <p>
-                                    Distrito de Fluviópolis, São Mateus do Sul
+                                    Distrito de Fluviópolis
+                                </p>
+
+                                <p>
+                                    São Mateus do Sul — Paraná
                                 </p>
 
                             </div>
 
                         </div>
 
+
                         <div class="dado">
 
-                            <span class="dado-icone" aria-hidden="true">
+                            <span
+                                class="dado-icone"
+                                aria-hidden="true"
+                            >
                                 🎓
                             </span>
 
                             <div>
 
                                 <strong>
-                                    Modalidades
+                                    Modalidades de ensino
                                 </strong>
 
                                 <p>
@@ -529,9 +678,13 @@
 
                         </div>
 
+
                         <div class="dado">
 
-                            <span class="dado-icone" aria-hidden="true">
+                            <span
+                                class="dado-icone"
+                                aria-hidden="true"
+                            >
                                 🔬
                             </span>
 
@@ -542,7 +695,8 @@
                                 </strong>
 
                                 <p>
-                                    Pesquisa, tecnologia e sustentabilidade
+                                    Pesquisa, tecnologia, sustentabilidade
+                                    e protagonismo estudantil
                                 </p>
 
                             </div>
@@ -559,6 +713,7 @@
 
     </main>
 
+
     <!-- =========================================
          RODAPÉ
     ========================================== -->
@@ -567,7 +722,8 @@
 
         <div class="container rodape-conteudo">
 
-            <div>
+
+            <div class="rodape-identificacao">
 
                 <p class="rodape-titulo">
                     Clube de Ciências Ouro Verde
@@ -579,6 +735,7 @@
 
             </div>
 
+
             <div class="rodape-localizacao">
 
                 <p>
@@ -586,12 +743,17 @@
                 </p>
 
                 <p>
-                    Distrito de Fluviópolis — São Mateus do Sul — Paraná
+                    Distrito de Fluviópolis
+                </p>
+
+                <p>
+                    São Mateus do Sul — Paraná
                 </p>
 
             </div>
 
         </div>
+
 
         <div class="rodape-final">
 
