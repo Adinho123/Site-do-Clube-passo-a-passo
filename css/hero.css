@@ -1,1 +1,179 @@
-/* Hero */
+/* =========================================
+   CABEÇALHO PRINCIPAL
+========================================= */
+
+.cabecalho-principal {
+    width: 100%;
+
+    min-height: 560px;
+
+    background-image:
+        url("../imagens/banner/fachada-do-colegio.png");
+
+    background-size: cover;
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+
+    border-bottom:
+        6px solid var(--dourado);
+}
+
+
+/* =========================================
+   CAMADA VERDE SOBRE A IMAGEM
+========================================= */
+
+.cabecalho-sobreposicao {
+    width: 100%;
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 55px 40px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 30, 17, 0.9) 0%,
+            rgba(11, 55, 30, 0.72) 30%,
+            rgba(11, 55, 30, 0.62) 50%,
+            rgba(11, 55, 30, 0.72) 70%,
+            rgba(5, 30, 17, 0.9) 100%
+        );
+}
+
+
+/* =========================================
+   ORGANIZAÇÃO INTERNA
+========================================= */
+
+.cabecalho-conteudo {
+    width: min(1500px, 100%);
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(170px, 230px)
+        minmax(300px, 1fr)
+        minmax(170px, 230px);
+
+    align-items: center;
+
+    gap: 45px;
+}
+
+
+/* =========================================
+   LOGOTIPOS
+========================================= */
+
+.cabecalho-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.cabecalho-logo img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 12px 18px rgba(0, 0, 0, 0.55)
+        );
+
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+.cabecalho-logo:hover img {
+    transform: scale(1.05);
+
+    filter:
+        drop-shadow(
+            0 16px 24px rgba(0, 0, 0, 0.65)
+        );
+}
+
+
+/* =========================================
+   TEXTOS CENTRAIS
+========================================= */
+
+.cabecalho-texto {
+    text-align: center;
+    color: var(--branco);
+}
+
+.cabecalho-subtitulo {
+    margin-bottom: 10px;
+
+    color: var(--verde-claro);
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    letter-spacing: 6px;
+    text-transform: uppercase;
+
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.cabecalho-texto h1 {
+    font-family: "Cinzel", serif;
+
+    font-size:
+        clamp(3.5rem, 6vw, 6.3rem);
+
+    font-weight: 700;
+
+    line-height: 1.02;
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: var(--dourado);
+
+    text-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.85),
+        0 10px 25px rgba(0, 0, 0, 0.45);
+}
+
+.cabecalho-escola {
+    max-width: 760px;
+
+    margin:
+        25px auto 0;
+
+    color: var(--branco);
+
+    font-size: 1.15rem;
+    font-weight: 600;
+
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.85);
+}
+
+.cabecalho-local {
+    margin-top: 8px;
+
+    color: #e3f0dc;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 2px 7px rgba(0, 0, 0, 0.85);
+}
