@@ -3,10 +3,6 @@
 
 <head>
 
-    <!-- =========================================
-         CONFIGURAÇÕES BÁSICAS
-    ========================================== -->
-
     <meta charset="UTF-8">
 
     <meta
@@ -16,7 +12,7 @@
 
     <meta
         name="description"
-        content="Site do Clube de Ciências Ouro Verde, do Colégio Estadual do Campo Professor Eugênio de Almeida, localizado no Distrito de Fluviópolis, em São Mateus do Sul, Paraná."
+        content="Site do Clube de Ciências Ouro Verde do Colégio Estadual do Campo Professor Eugênio de Almeida."
     >
 
     <meta
@@ -26,22 +22,15 @@
 
     <meta
         name="theme-color"
-        content="#103e24"
+        content="#123d24"
     >
 
-    <title>
-        Clube de Ciências Ouro Verde
-    </title>
+    <title>Clube de Ciências Ouro Verde</title>
 
 
-    <!-- =========================================
-         FONTES
-    ========================================== -->
+    <!-- FONTES -->
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link
         rel="preconnect"
@@ -55,78 +44,53 @@
     >
 
 
-    <!-- =========================================
-         ARQUIVOS CSS
-    ========================================== -->
+    <!-- CSS -->
 
-    <!-- Configurações gerais, menu, cards e rodapé -->
-    <link
-        rel="stylesheet"
-        href="css/style.css?v=2"
-    >
-
-    <!-- Cabeçalho e banner principal -->
-    <link
-        rel="stylesheet"
-        href="css/hero.css?v=2"
-    >
-
-    <!-- Adaptação para celular e tablet -->
-    <link
-        rel="stylesheet"
-        href="css/responsivo.css?v=2"
-    >
+    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="stylesheet" href="css/hero.css?v=3">
+    <link rel="stylesheet" href="css/responsivo.css?v=3">
 
 </head>
 
 
 <body>
 
-    <!-- Link de acessibilidade -->
-    <a
-        class="link-pular"
-        href="#conteudo-principal"
-    >
-        Pular para o conteúdo principal
-    </a>
 
-
-    <!-- =========================================
-         CABEÇALHO COM BANNER
-    ========================================== -->
+    <!-- ======================================
+         CABEÇALHO / BANNER
+    ======================================= -->
 
     <header
         class="cabecalho-principal"
         id="inicio"
     >
 
-        <!--
-            A imagem fachada-do-colegio.png
-            será colocada como fundo pelo hero.css.
-        -->
-
         <div class="cabecalho-sobreposicao">
 
             <div class="cabecalho-conteudo">
 
 
-                <!-- Logo do colégio: lado esquerdo -->
+                <!-- LOGO DO COLÉGIO -->
 
-                <a
-                    class="cabecalho-logo"
-                    href="index.html"
-                    aria-label="Voltar para a página inicial"
-                >
+                <div class="area-logo area-logo-colegio">
 
-                    <img
-                        src="imagens/logos/logo-eugenio.png"
-                        alt="Logotipo do Colégio Estadual do Campo Professor Eugênio de Almeida"
+                    <a
+                        class="cabecalho-logo logo-colegio"
+                        href="index.html"
+                        aria-label="Página inicial"
                     >
 
-                </a>
+                        <img
+                            src="imagens/logos/logo-eugenio.png"
+                            alt="Logotipo do Colégio Estadual do Campo Professor Eugênio de Almeida"
+                        >
+
+                    </a>
+
+                </div>
 
 
-                <!-- Nome do site: centro -->
+                <!-- NOME DO SITE -->
 
                 <div class="cabecalho-texto">
 
@@ -138,6 +102,8 @@
                         Ouro Verde
                     </h1>
 
+                    <div class="linha-decorativa"></div>
+
                     <p class="cabecalho-escola">
                         Colégio Estadual do Campo Professor Eugênio de Almeida
                     </p>
@@ -147,26 +113,31 @@
                     </p>
 
                     <p class="cabecalho-local">
-                        Distrito de Fluviópolis — São Mateus do Sul — Paraná
+                        Distrito de Fluviópolis • São Mateus do Sul • Paraná
                     </p>
 
                 </div>
 
 
-                <!-- Logo do clube: lado direito -->
+                <!-- LOGO DO CLUBE -->
 
-                <a
-                    class="cabecalho-logo"
-                    href="index.html"
-                    aria-label="Voltar para a página inicial"
-                >
+                <div class="area-logo">
 
-                    <img
-                        src="imagens/logos/logo-clube.png"
-                        alt="Logo do Clube de Ciências Ouro Verde"
+                    <a
+                        class="cabecalho-logo"
+                        href="index.html"
+                        aria-label="Clube de Ciências Ouro Verde"
                     >
 
-                </a>
+                        <img
+                            src="imagens/logos/logo-clube.png"
+                            alt="Logo do Clube de Ciências Ouro Verde"
+                        >
+
+                    </a>
+
+                </div>
+
 
             </div>
 
@@ -175,13 +146,14 @@
     </header>
 
 
-    <!-- =========================================
+
+    <!-- ======================================
          MENU PRINCIPAL
-    ========================================== -->
+    ======================================= -->
 
     <nav
         class="menu-principal"
-        aria-label="Menu principal do site"
+        aria-label="Menu principal"
     >
 
         <div class="menu-container">
@@ -192,7 +164,6 @@
             >
                 Ouro Verde
             </a>
-
 
             <ul class="menu-lista">
 
@@ -213,13 +184,13 @@
 
                 <li>
                     <a href="paginas/lendas-folclore.html">
-                        Lendas e Folclore
+                        Lendas
                     </a>
                 </li>
 
                 <li>
                     <a href="paginas/plantio-cuidados.html">
-                        Plantio e Cuidados
+                        Plantio
                     </a>
                 </li>
 
@@ -260,46 +231,40 @@
     </nav>
 
 
-    <!-- =========================================
+
+    <!-- ======================================
          CONTEÚDO PRINCIPAL
-    ========================================== -->
+    ======================================= -->
 
-    <main id="conteudo-principal">
+    <main>
 
 
-        <!-- =====================================
-             APRESENTAÇÃO
-        ====================================== -->
+        <!-- APRESENTAÇÃO -->
 
         <section class="secao-apresentacao">
 
-            <div class="container">
+            <div class="container apresentacao-conteudo">
 
                 <p class="rotulo-secao">
-                    Ciência, educação e protagonismo estudantil
+                    Ciência • natureza • tecnologia
                 </p>
 
                 <h2 class="titulo-secao">
-                    Bem-vindo ao Clube de Ciências Ouro Verde
+                    Conhecimento que nasce da nossa terra
                 </h2>
 
+                <div class="linha-titulo"></div>
+
                 <p class="texto-destaque">
-                    Um espaço dedicado à investigação científica, à inovação,
-                    à sustentabilidade, à valorização da erva-mate e ao
-                    desenvolvimento de projetos realizados pelos estudantes.
+                    O Clube de Ciências Ouro Verde é um espaço de pesquisa,
+                    experimentação e protagonismo estudantil.
                 </p>
 
-                <p>
-                    O Clube de Ciências Ouro Verde pertence ao Colégio Estadual
-                    do Campo Professor Eugênio de Almeida, localizado no
-                    Distrito de Fluviópolis, em São Mateus do Sul, Paraná.
-                </p>
-
-                <p>
-                    Por meio de pesquisas, experiências, atividades práticas,
-                    tecnologia, robótica e educação ambiental, os estudantes
-                    investigam problemas reais e desenvolvem soluções
-                    relacionadas à comunidade e ao território onde vivem.
+                <p class="texto-apresentacao">
+                    Aqui, ciência e cultura se encontram para investigar a
+                    erva-mate, valorizar os conhecimentos da nossa região,
+                    desenvolver novas tecnologias e aproximar os estudantes
+                    da pesquisa científica.
                 </p>
 
             </div>
@@ -307,33 +272,32 @@
         </section>
 
 
-        <!-- =====================================
-             ACESSOS ÀS SUBPÁGINAS
-        ====================================== -->
+
+        <!-- ======================================
+             CARDS DAS PÁGINAS
+        ======================================= -->
 
         <section class="secao-acessos">
 
             <div class="container">
-
 
                 <div class="cabecalho-secao">
 
                     <div>
 
                         <p class="rotulo-secao">
-                            Explore o portal
+                            Explore e descubra
                         </p>
 
                         <h2 class="titulo-secao">
-                            Conheça nossas páginas
+                            Conheça a erva-mate
                         </h2>
 
                     </div>
 
                     <p class="descricao-secao">
-                        Acesse os conteúdos produzidos pelos estudantes e
-                        conheça a história, as pesquisas e as atividades
-                        desenvolvidas pelo Clube Ouro Verde.
+                        História, cultura, cultivo, produção de mudas e
+                        diferentes formas de utilização da erva-mate.
                     </p>
 
                 </div>
@@ -342,244 +306,229 @@
                 <div class="grade-cards">
 
 
-                    <!-- História -->
+                    <!-- HISTÓRIA -->
 
                     <article class="card-acesso">
 
-                        <div
-                            class="card-icone"
-                            aria-hidden="true"
-                        >
-                            📖
-                        </div>
-
-                        <h3>
-                            História
-                        </h3>
-
-                        <p>
-                            Conheça a história do clube, da escola e da
-                            erva-mate em nossa região.
-                        </p>
-
                         <a
-                            class="botao-card"
+                            class="card-imagem-link"
                             href="paginas/historia.html"
                         >
-                            Acessar página
+
+                            <img
+                                class="card-imagem"
+                                src="imagens/logos/historia.png"
+                                alt="Representação da história da erva-mate"
+                            >
+
                         </a>
+
+                        <div class="card-conteudo">
+
+                            <span class="card-numero">
+                                01
+                            </span>
+
+                            <h3>
+                                História
+                            </h3>
+
+                            <p>
+                                Conheça as origens da erva-mate e sua
+                                importância histórica, cultural e econômica.
+                            </p>
+
+                            <a
+                                class="botao-card"
+                                href="paginas/historia.html"
+                            >
+                                Descobrir →
+                            </a>
+
+                        </div>
 
                     </article>
 
 
-                    <!-- Lendas e Folclore -->
+
+                    <!-- LENDAS -->
 
                     <article class="card-acesso">
 
-                        <div
-                            class="card-icone"
-                            aria-hidden="true"
-                        >
-                            🌳
-                        </div>
-
-                        <h3>
-                            Lendas e Folclore
-                        </h3>
-
-                        <p>
-                            Descubra lendas, histórias e manifestações
-                            culturais relacionadas à erva-mate.
-                        </p>
-
                         <a
-                            class="botao-card"
+                            class="card-imagem-link"
                             href="paginas/lendas-folclore.html"
                         >
-                            Acessar página
+
+                            <img
+                                class="card-imagem"
+                                src="imagens/logos/lendas.png"
+                                alt="Representação das lendas relacionadas à erva-mate"
+                            >
+
                         </a>
+
+                        <div class="card-conteudo">
+
+                            <span class="card-numero">
+                                02
+                            </span>
+
+                            <h3>
+                                Lendas e Folclore
+                            </h3>
+
+                            <p>
+                                Descubra histórias, personagens e tradições
+                                transmitidas ao longo das gerações.
+                            </p>
+
+                            <a
+                                class="botao-card"
+                                href="paginas/lendas-folclore.html"
+                            >
+                                Descobrir →
+                            </a>
+
+                        </div>
 
                     </article>
 
 
-                    <!-- Plantio -->
+
+                    <!-- PLANTIO -->
 
                     <article class="card-acesso">
 
-                        <div
-                            class="card-icone"
-                            aria-hidden="true"
-                        >
-                            🌱
-                        </div>
-
-                        <h3>
-                            Plantio e Cuidados
-                        </h3>
-
-                        <p>
-                            Aprenda sobre escolha do local, preparo do solo,
-                            plantio, manejo e cuidados com a erva-mate.
-                        </p>
-
                         <a
-                            class="botao-card"
+                            class="card-imagem-link"
                             href="paginas/plantio-cuidados.html"
                         >
-                            Acessar página
+
+                            <img
+                                class="card-imagem"
+                                src="imagens/logos/plantio.png"
+                                alt="Representação do cultivo e manejo da erva-mate"
+                            >
+
                         </a>
+
+                        <div class="card-conteudo">
+
+                            <span class="card-numero">
+                                03
+                            </span>
+
+                            <h3>
+                                Plantio e Cuidados
+                            </h3>
+
+                            <p>
+                                Aprenda sobre solo, plantio, desenvolvimento,
+                                poda e manejo das plantas.
+                            </p>
+
+                            <a
+                                class="botao-card"
+                                href="paginas/plantio-cuidados.html"
+                            >
+                                Descobrir →
+                            </a>
+
+                        </div>
 
                     </article>
 
 
-                    <!-- Produção de mudas -->
+
+                    <!-- PRODUÇÃO DE MUDAS -->
 
                     <article class="card-acesso">
 
-                        <div
-                            class="card-icone"
-                            aria-hidden="true"
-                        >
-                            🍃
-                        </div>
-
-                        <h3>
-                            Produção de Mudas
-                        </h3>
-
-                        <p>
-                            Conheça as etapas de coleta de sementes,
-                            germinação, desenvolvimento e produção de mudas.
-                        </p>
-
                         <a
-                            class="botao-card"
+                            class="card-imagem-link"
                             href="paginas/producao-mudas.html"
                         >
-                            Acessar página
+
+                            <img
+                                class="card-imagem"
+                                src="imagens/logos/produz-mudas.png"
+                                alt="Representação da produção de mudas de erva-mate"
+                            >
+
                         </a>
+
+                        <div class="card-conteudo">
+
+                            <span class="card-numero">
+                                04
+                            </span>
+
+                            <h3>
+                                Produção de Mudas
+                            </h3>
+
+                            <p>
+                                Da formação dos frutos e sementes até a
+                                germinação e o desenvolvimento das mudas.
+                            </p>
+
+                            <a
+                                class="botao-card"
+                                href="paginas/producao-mudas.html"
+                            >
+                                Descobrir →
+                            </a>
+
+                        </div>
 
                     </article>
 
 
-                    <!-- Receitas -->
+
+                    <!-- RECEITAS -->
 
                     <article class="card-acesso">
 
-                        <div
-                            class="card-icone"
-                            aria-hidden="true"
-                        >
-                            🧁
-                        </div>
-
-                        <h3>
-                            Receitas
-                        </h3>
-
-                        <p>
-                            Encontre receitas e novas formas de aproveitar a
-                            erva-mate na alimentação.
-                        </p>
-
                         <a
-                            class="botao-card"
+                            class="card-imagem-link"
                             href="paginas/receitas.html"
                         >
-                            Acessar página
+
+                            <img
+                                class="card-imagem"
+                                src="imagens/logos/receitas.png"
+                                alt="Representação dos usos e receitas com erva-mate"
+                            >
+
                         </a>
 
-                    </article>
+                        <div class="card-conteudo">
 
+                            <span class="card-numero">
+                                05
+                            </span>
 
-                    <!-- Projetos -->
+                            <h3>
+                                Usos e Receitas
+                            </h3>
 
-                    <article class="card-acesso">
+                            <p>
+                                Do chimarrão e tereré às receitas criativas
+                                desenvolvidas com erva-mate.
+                            </p>
 
-                        <div
-                            class="card-icone"
-                            aria-hidden="true"
-                        >
-                            🔬
+                            <a
+                                class="botao-card"
+                                href="paginas/receitas.html"
+                            >
+                                Descobrir →
+                            </a>
+
                         </div>
 
-                        <h3>
-                            Projetos do Clube
-                        </h3>
-
-                        <p>
-                            Acompanhe pesquisas, experiências e soluções
-                            desenvolvidas pelos estudantes.
-                        </p>
-
-                        <a
-                            class="botao-card"
-                            href="paginas/projetos-clube.html"
-                        >
-                            Acessar página
-                        </a>
-
                     </article>
 
-
-                    <!-- Galeria -->
-
-                    <article class="card-acesso">
-
-                        <div
-                            class="card-icone"
-                            aria-hidden="true"
-                        >
-                            📷
-                        </div>
-
-                        <h3>
-                            Galeria
-                        </h3>
-
-                        <p>
-                            Veja fotografias de atividades, experiências,
-                            visitas, eventos e apresentações.
-                        </p>
-
-                        <a
-                            class="botao-card"
-                            href="paginas/galeria.html"
-                        >
-                            Acessar página
-                        </a>
-
-                    </article>
-
-
-                    <!-- Notícias -->
-
-                    <article class="card-acesso">
-
-                        <div
-                            class="card-icone"
-                            aria-hidden="true"
-                        >
-                            📰
-                        </div>
-
-                        <h3>
-                            Notícias
-                        </h3>
-
-                        <p>
-                            Confira novidades, eventos, resultados,
-                            participações e conquistas do clube.
-                        </p>
-
-                        <a
-                            class="botao-card"
-                            href="paginas/noticias.html"
-                        >
-                            Acessar página
-                        </a>
-
-                    </article>
 
                 </div>
 
@@ -588,9 +537,122 @@
         </section>
 
 
-        <!-- =====================================
-             INFORMAÇÕES INSTITUCIONAIS
-        ====================================== -->
+
+        <!-- ======================================
+             CLUBE DE CIÊNCIAS
+        ======================================= -->
+
+        <section class="secao-clube">
+
+            <div class="container">
+
+                <div class="chamada-clube">
+
+                    <div class="chamada-clube-texto">
+
+                        <p class="rotulo-secao rotulo-claro">
+                            Clube Ouro Verde
+                        </p>
+
+                        <h2>
+                            Ciência feita por estudantes
+                        </h2>
+
+                        <p>
+                            Conheça os projetos científicos, experiências,
+                            atividades, eventos e produções desenvolvidas
+                            pelos integrantes do Clube de Ciências Ouro Verde.
+                        </p>
+
+                    </div>
+
+
+                    <div class="atalhos-clube">
+
+                        <a
+                            class="atalho"
+                            href="paginas/projetos-clube.html"
+                        >
+
+                            <span class="atalho-icone">
+                                🔬
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Projetos
+                                </strong>
+
+                                <small>
+                                    Pesquisas e experimentos
+                                </small>
+
+                            </div>
+
+                        </a>
+
+
+                        <a
+                            class="atalho"
+                            href="paginas/galeria.html"
+                        >
+
+                            <span class="atalho-icone">
+                                📷
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Galeria
+                                </strong>
+
+                                <small>
+                                    Registros do clube
+                                </small>
+
+                            </div>
+
+                        </a>
+
+
+                        <a
+                            class="atalho"
+                            href="paginas/noticias.html"
+                        >
+
+                            <span class="atalho-icone">
+                                📰
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Notícias
+                                </strong>
+
+                                <small>
+                                    Acompanhe nossas atividades
+                                </small>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             INSTITUIÇÃO
+        ======================================= -->
 
         <section class="secao-institucional">
 
@@ -598,27 +660,21 @@
 
                 <div class="painel-institucional">
 
-
                     <div class="painel-texto">
 
                         <p class="rotulo-secao rotulo-claro">
-                            Nossa instituição
+                            Nossa escola
                         </p>
 
                         <h2>
-                            Ciência construída no campo e para a comunidade
+                            Educação, ciência e comunidade
                         </h2>
 
                         <p>
                             O Colégio Estadual do Campo Professor Eugênio de
-                            Almeida atende estudantes do Ensino Fundamental,
-                            Médio e Técnico.
-                        </p>
-
-                        <p>
-                            A escola valoriza uma educação conectada à
-                            realidade local, à cultura regional, à ciência,
-                            à tecnologia e ao desenvolvimento sustentável.
+                            Almeida desenvolve uma educação conectada à
+                            realidade do campo, à ciência, à tecnologia,
+                            à cultura e à sustentabilidade.
                         </p>
 
                     </div>
@@ -626,13 +682,9 @@
 
                     <div class="dados-institucionais">
 
-
                         <div class="dado">
 
-                            <span
-                                class="dado-icone"
-                                aria-hidden="true"
-                            >
+                            <span>
                                 📍
                             </span>
 
@@ -657,21 +709,18 @@
 
                         <div class="dado">
 
-                            <span
-                                class="dado-icone"
-                                aria-hidden="true"
-                            >
+                            <span>
                                 🎓
                             </span>
 
                             <div>
 
                                 <strong>
-                                    Modalidades de ensino
+                                    Ensino
                                 </strong>
 
                                 <p>
-                                    Ensino Fundamental, Médio e Técnico
+                                    Fundamental, Médio e Técnico
                                 </p>
 
                             </div>
@@ -681,22 +730,18 @@
 
                         <div class="dado">
 
-                            <span
-                                class="dado-icone"
-                                aria-hidden="true"
-                            >
-                                🔬
+                            <span>
+                                🌱
                             </span>
 
                             <div>
 
                                 <strong>
-                                    Clube de Ciências
+                                    Identidade
                                 </strong>
 
                                 <p>
-                                    Pesquisa, tecnologia, sustentabilidade
-                                    e protagonismo estudantil
+                                    Ciência, campo e sustentabilidade
                                 </p>
 
                             </div>
@@ -711,19 +756,20 @@
 
         </section>
 
+
     </main>
 
 
-    <!-- =========================================
+
+    <!-- ======================================
          RODAPÉ
-    ========================================== -->
+    ======================================= -->
 
     <footer class="rodape-principal">
 
         <div class="container rodape-conteudo">
 
-
-            <div class="rodape-identificacao">
+            <div>
 
                 <p class="rodape-titulo">
                     Clube de Ciências Ouro Verde
@@ -757,14 +803,12 @@
 
         <div class="rodape-final">
 
-            <p>
-                © 2026 Clube de Ciências Ouro Verde.
-                Conteúdo educativo desenvolvido pela comunidade escolar.
-            </p>
+            © 2026 Clube de Ciências Ouro Verde
 
         </div>
 
     </footer>
+
 
 </body>
 
